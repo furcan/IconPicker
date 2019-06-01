@@ -1,0 +1,40 @@
+{
+    "name": "@furcan/iconpicker",
+    "main": "dist/iconpicker-1.0.0.js",
+    "style": "dist/iconpicker-1.0.0.css",
+    "version": "1.0.0-beta.1",
+    "description": "Use the FontAwesome Icons (FontAwesome v5.8.2) in your HTML forms.",
+    "homepage": "https://github.com/furcan/IconPicker",
+    "files": [
+      "dist"
+    ],
+    "keywords": [
+      "icon picker",
+      "iconpicker",
+      "font awesome",
+      "fontawesome",
+      "icon",
+      "icons",
+      "web fonts",
+      "webfonts",
+      "font icons",
+      "svg icons"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/furcan/IconPicker.git"
+    },
+    "bugs": {
+      "url": "https://github.com/furcan/IconPicker/issues"
+    },
+    "author": "Furkan MT (https://github.com/furcan)",
+    "contributors": [
+      "Furkan MT (https://github.com/furcan)"
+    ],
+    "licenses": [
+      {
+        "type": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    ]
+  }
