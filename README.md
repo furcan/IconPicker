@@ -39,8 +39,6 @@ yarn add @furcan/iconpicker
 #### 3- HTML
 `<button type="button" id="GetIconPicker" data-iconpicker-input="input#IconInput" data-iconpicker-preview="i#IconPreview">Select Icon</button>`
 
---_--_--
-
 #### 4- Init
 
 ```js
@@ -54,8 +52,6 @@ IconPicker.Init({
   cancelButton: 'Cancel',
 });
 ```
-
---_--_--
 
 #### 5- Run
 
