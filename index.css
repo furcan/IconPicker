@@ -133,10 +133,17 @@ font-weight: 900;}
 
 .header-wrapper span.logo-desc {
 display: table;
-margin: auto;
+margin: 0 auto 10px;
 color:#fff;
-font-size: 12px;
-line-height: 12px;}
+font-size: 13px;
+line-height: 18px;}
+
+.header-wrapper span.logo-required {
+display: table;
+margin: auto;
+color:rgba(255, 255, 255, 0.6);
+font-size: 11px;
+line-height: 11px;}
 /* Header off */
 
 /* Content Label on */
