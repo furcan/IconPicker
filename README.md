@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/furcan/IconPicker/master/github-cover.png" width="640" height="auto" alt="Icon Picker">
+</p>
+
+
 # Icon Picker
 Use the FontAwesome Icons (FontAwesome v5.8.2) in your HTML forms.
 
