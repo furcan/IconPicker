@@ -31,6 +31,7 @@ yarn add @furcan/iconpicker
 
 #### 1- CSS
 `<link rel="stylesheet" href="dist/fontawesome582/css/all.min.css" />`
+
 `<link rel="stylesheet" href="dist/iconpicker-1.0.0.css" />`
 
 #### 2- JavaScript
