@@ -28,8 +28,8 @@
     <link id="FontConsolas" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="dist/fontawesome582/css/all.min.css">
-    <link rel="stylesheet" href="dist/iconpicker-1.0.0.css">
-    <link rel="stylesheet" href="index.css?v=1">
+    <link rel="stylesheet" href="dist/iconpicker-1.1.0.css">
+    <link rel="stylesheet" href="index.css?v=1.1.0">
 
 </head>
 
@@ -50,12 +50,12 @@
                     <code id="DemoCodeCSS">
                         <span class="label">CSS</span>
                         <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/fontawesome582/css/all.min.css</span>"&gt;</span>
-                        <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/iconpicker-1.0.0.css</span>"&gt;</span>
+                        <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/iconpicker-1.1.0.css</span>"&gt;</span>
                     </code>
 
                     <code id="DemoCodeJS">
-                        <span class="label">JS</span>
-                        <span class="l1">&lt;script src="<span>/IconPicker/dist/iconpicker-1.0.0.js</span>"&gt;&lt;/script&gt;</span>
+                        <span class="label">JavaScript</span>
+                        <span class="l1">&lt;script src="<span>/IconPicker/dist/iconpicker-1.1.0.js</span>"&gt;&lt;/script&gt;</span>
                     </code>
                 </div>
 
@@ -71,10 +71,9 @@
                         <span class="label">Initialize</span>
                         <span class="l1 cmmnt">// Default options</span>
                         <span class="l1"><span class="fnc1">IconPicker</span>.<span class="fnc2">Init</span>({</span>
-                            <span class="l1 l2 cmmnt">// Required: You have to set the path of IconPicker JSON file to "jsonUrl" option.</span>
-                            <span class="l1 l2 cmmnt">// e.g. '/content/plugins/IconPicker/dist/iconpicker-1.0.0.json'</span>
+                            <span class="l1 l2 cmmnt">// Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.1.0.json'</span>
                             <span class="l1 l2"><span class="fnc1">jsonUrl:</span> <span class="bool">null</span>,</span>
-                            <span class="l1 l2 cmmnt">// Optional: Change the buttons text according to the language.</span>
+                            <span class="l1 l2 cmmnt">// Optional: Change the buttons or search placeholder text according to the language.</span>
                             <span class="l1 l2"><span class="fnc1">searchPlaceholder:</span> <span class="str">'Search Icon'</span>,</span>
                             <span class="l1 l2"><span class="fnc1">showAllButton:</span> <span class="str">'Show All'</span>,</span>
                             <span class="l1 l2"><span class="fnc1">cancelButton:</span> <span class="str">'Cancel'</span>,</span>
@@ -128,7 +127,7 @@
 
                             <div class="export">
                                 <span class="info">A "Hidden" or "Text"(display:none; etc.) type of Input Element to set a "FontAwesome icon classname" and post with Form</span>
-                                <input type="text" id="IconInput" name="Icon" required readonly placeholder="Hidden etc. input for icon classname" autocomplete="off" spellcheck="false" />
+                                <input type="text" id="IconInput" name="Icon" required placeholder="Hidden etc. input for icon classname" autocomplete="off" spellcheck="false" />
                             </div>
                         </div>
 
@@ -155,9 +154,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.5.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="dist/iconpicker-1.0.0.js"></script>
+    <script src="dist/iconpicker-1.1.0.js"></script>
     <script src="index-tooltip.js"></script>
-    <script src="index.js?v=2"></script>
+    <script src="index.js?v=1.1.0"></script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 /*!
 * IconPicker DEMO ('https://github.com/furcan/IconPicker')
-* Version: 1.0.0 
+* Version: 1.1.0 
 * Author: Furkan MT ('https://github.com/furcan')
 * Dependencies: FontAwesome v5.8.2 (https://fontawesome.com/license/free)
 * Copyright 2019 IconPicker, MIT Licence ('https://opensource.org/licenses/MIT')*
@@ -8,7 +8,7 @@
 
 // DEMO: IconPicker on
 IconPicker.Init({
-    jsonUrl: 'dist/iconpicker-1.0.0.json',
+    jsonUrl: 'dist/iconpicker-1.1.0.json',
 });
 IconPicker.Run('#GetIconPicker');
 // DEMO: IconPicker off
