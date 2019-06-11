@@ -7,3 +7,8 @@
 * **Added:** Icon class names can be set to HTML elements which has contenteditable="true". Recommended by Volmarg (https://github.com/Volmarg).
 
 * **Added:** Added loading indicator when icon list (1515 icons) preparing.
+
+-----
+
+@1.2.0
+* **Added:** Font Awesome Free Icons Library upgraded from "v5.8.2" (1515 icons) to "v5.9.0" (1534 icons).
