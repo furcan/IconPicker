@@ -12,3 +12,8 @@
 
 @1.2.0
 * **Added:** Font Awesome Free Icons Library upgraded from "v5.8.2" (1515 icons) to "v5.9.0" (1534 icons).
+
+-----
+
+@1.3.0
+* **Changed:** Code Review.

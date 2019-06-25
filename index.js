@@ -1,6 +1,6 @@
 /*!
 * IconPicker DEMO ('https://github.com/furcan/IconPicker')
-* Version: 1.2.0 
+* Version: 1.3.0 
 * Author: Furkan MT ('https://github.com/furcan')
 * Dependencies: FontAwesome v5.9.0 (https://fontawesome.com/license/free)
 * Copyright 2019 IconPicker, MIT Licence ('https://opensource.org/licenses/MIT')*
@@ -8,7 +8,7 @@
 
 // DEMO: IconPicker on
 IconPicker.Init({
-    jsonUrl: 'dist/iconpicker-1.2.0.json',
+    jsonUrl: 'dist/iconpicker-1.3.0.json',
 });
 IconPicker.Run('#GetIconPicker');
 // DEMO: IconPicker off
@@ -50,11 +50,11 @@ if (localStorage) {
 
     // if icon data exist
     var nameData = localStorage.getItem('name');
-    var emailData = localStorage.getItem('email');
+    var descriptionData = localStorage.getItem('description');
     var iconData = localStorage.getItem('icon');
-    if (iconData && nameData && emailData) {
+    if (iconData && nameData && descriptionData) {
         document.getElementById('Name').value = nameData; // dom name value
-        document.getElementById('Email').value = emailData; // dom email value
+        document.getElementById('Description').value = descriptionData; // dom description value
         document.getElementById('IconInput').value = iconData; // dom input value
         document.getElementById('IconPreview').className = iconData; // dom preview icon classname
     }
@@ -73,18 +73,18 @@ demoForm.addEventListener('submit', function (e) {
 // DEMO: Form save local storage on
 function submitFormLocalStorage() {
     var nameData = document.getElementById('Name').value;
-    var emailData = document.getElementById('Email').value;
+    var descriptionData = document.getElementById('Description').value;
     var iconData = document.getElementById('IconInput').value;
 
-    if (nameData.length > 0 && emailData.length > 0 && iconData.length > 0) {
+    if (nameData.length > 0 && descriptionData.length > 0 && iconData.length > 0) {
 
         // local storage
         localStorage.setItem('name', nameData);
-        localStorage.setItem('email', emailData);
+        localStorage.setItem('description', descriptionData);
         localStorage.setItem('icon', iconData);
 
         // code element
-        var code = '<span class="l1">?Name=<span class="name">' + nameData + '</span>&Email=<span class="email">' + emailData + '</span>&Icon=<span class="icon">' + iconData + '</span></span>';
+        var code = '<span class="l1">?Name=<span class="name">' + nameData + '</span>&Description=<span class="description">' + descriptionData + '</span>&Icon=<span class="icon">' + iconData + '</span></span>';
         var codeElement = document.getElementById('DemoCode');
         codeElement.innerHTML = code;
 
@@ -93,13 +93,13 @@ function submitFormLocalStorage() {
 
     }
     if (nameData.length <= 0) {
-        Notiflix.Notify.Failure('Your name is required.');
+        Notiflix.Notify.Failure('Module name is required.');
     }
-    if (emailData.length <= 0) {
-        Notiflix.Notify.Failure('Your email is required.');
+    if (descriptionData.length <= 0) {
+        Notiflix.Notify.Failure('Module description is required.');
     }
     if (iconData.length <= 0) {
-        Notiflix.Notify.Failure('Your icon is required.');
+        Notiflix.Notify.Failure('Module icon is required.');
     }
 }
 // DEMO: Form save local storage off

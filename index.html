@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
 
     <link rel="canonical" href="https://furcan.github.io/IconPicker/" />
-    
+
     <meta name="abstract" content="Icon Picker | Use the Font Awesome Icons (Font Awesome Free v5.9.0) in your HTML forms. (1534 icons)">
     <meta name="author" content="Furcan" />
     <meta name="generator" content="Furcan" />
@@ -28,8 +28,8 @@
     <link id="FontConsolas" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="dist/fontawesome590/css/all.min.css">
-    <link rel="stylesheet" href="dist/iconpicker-1.2.0.css">
-    <link rel="stylesheet" href="index.css?v=1.2.0">
+    <link rel="stylesheet" href="dist/iconpicker-1.3.0.css">
+    <link rel="stylesheet" href="index.css?v=1.3.0">
 
 </head>
 
@@ -50,12 +50,12 @@
                     <code id="DemoCodeCSS">
                         <span class="label">CSS</span>
                         <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/fontawesome590/css/all.min.css</span>"&gt;</span>
-                        <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/iconpicker-1.2.0.css</span>"&gt;</span>
+                        <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/iconpicker-1.3.0.css</span>"&gt;</span>
                     </code>
 
                     <code id="DemoCodeJS">
                         <span class="label">JavaScript</span>
-                        <span class="l1">&lt;script src="<span>/IconPicker/dist/iconpicker-1.2.0.js</span>"&gt;&lt;/script&gt;</span>
+                        <span class="l1">&lt;script src="<span>/IconPicker/dist/iconpicker-1.3.0.js</span>"&gt;&lt;/script&gt;</span>
                     </code>
                 </div>
 
@@ -71,7 +71,7 @@
                         <span class="label">Initialize</span>
                         <span class="l1 cmmnt">// Default options</span>
                         <span class="l1"><span class="fnc1">IconPicker</span>.<span class="fnc2">Init</span>({</span>
-                            <span class="l1 l2 cmmnt">// Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.2.0.json'</span>
+                            <span class="l1 l2 cmmnt">// Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.3.0.json'</span>
                             <span class="l1 l2"><span class="fnc1">jsonUrl:</span> <span class="bool">null</span>,</span>
                             <span class="l1 l2 cmmnt">// Optional: Change the buttons or search placeholder text according to the language.</span>
                             <span class="l1 l2"><span class="fnc1">searchPlaceholder:</span> <span class="str">'Search Icon'</span>,</span>
@@ -105,17 +105,17 @@
                     <div class="form-group">
 
                         <div class="form-input opacity">
-                            <label for="Name">Name</label>
-                            <input type="text" id="Name" name="Name" class="inpt" required placeholder="Name" autocomplete="off" spellcheck="false" />
+                            <label for="Name">Module Name</label>
+                            <input type="text" id="Name" name="Name" class="inpt" placeholder="Module Name" autocomplete="off" spellcheck="false" required />
                         </div>
 
                         <div class="form-input opacity">
-                            <label for="Email">E-mail</label>
-                            <input type="email" id="Email" name="Email" class="inpt" required placeholder="E-mail" autocomplete="off" spellcheck="false" />
+                            <label for="Email">Module Description</label>
+                            <textarea id="Description" name="Description" placeholder="Module Description" autocomplete="off" spellcheck="false" autocapitalize="none" rows="2" minlength="5" maxlength="2500" required></textarea>
                         </div>
 
                         <div class="form-input form-input-icon">
-                            <label>Icon</label>
+                            <label>Module Icon</label>
 
                             <div class="get-and-preview">
                                 <div class="icon-preview" data-toggle="tooltip" title="Preview of selected Icon">
@@ -152,11 +152,12 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.5.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="dist/iconpicker-1.2.0.js"></script>
+    <script src="dist/iconpicker-1.3.0.js"></script>
     <script src="index-tooltip.js"></script>
-    <script src="index.js?v=1.2.0"></script>
+    <script src="index.js?v=1.3.0"></script>
 
 </body>
+
 </html>

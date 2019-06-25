@@ -8,7 +8,7 @@ Use the Font Awesome Icons (Font Awesome Free v5.9.0) in your HTML forms. (1534 
 
 
 ### Current Version
-1.2.0 [*](https://github.com/furcan/IconPicker/blob/master/ReleaseNotes.md)
+1.3.0 [*](https://github.com/furcan/IconPicker/blob/master/ReleaseNotes.md)
 
 ### Website and Demo
 https://furcan.github.io/IconPicker/
@@ -31,10 +31,10 @@ yarn add @furcan/iconpicker
 #### 1- CSS
 `<link rel="stylesheet" href="dist/fontawesome590/css/all.min.css" />`
 
-`<link rel="stylesheet" href="dist/iconpicker-1.2.0.css" />`
+`<link rel="stylesheet" href="dist/iconpicker-1.3.0.css" />`
 
 #### 2- JavaScript
-`<script src="dist/iconpicker-1.2.0.js"></script>`
+`<script src="dist/iconpicker-1.3.0.js"></script>`
 
 #### 3- HTML
 `<button type="button" id="GetIconPicker" data-iconpicker-input="input#IconInput" data-iconpicker-preview="i#IconPreview">Select Icon</button>`
@@ -44,7 +44,7 @@ yarn add @furcan/iconpicker
 ```js
 // Default options
 IconPicker.Init({
-  // Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.2.0.json'
+  // Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.3.0.json'
   jsonUrl: null,
   // Optional: Change the buttons or search placeholder text according to the language.
   searchPlaceholder: 'Search Icon',
