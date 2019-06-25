@@ -29,15 +29,24 @@ yarn add @furcan/iconpicker
 ---------
 
 #### 1- CSS
-`<link rel="stylesheet" href="dist/fontawesome590/css/all.min.css" />`
 
-`<link rel="stylesheet" href="dist/iconpicker-1.3.0.css" />`
+```html
+<link rel="stylesheet" href="dist/fontawesome590/css/all.min.css" />
+
+<link rel="stylesheet" href="dist/iconpicker-1.3.0.css" />
+```
 
 #### 2- JavaScript
-`<script src="dist/iconpicker-1.3.0.js"></script>`
+
+```html
+<script src="dist/iconpicker-1.3.0.js"></script>
+```
 
 #### 3- HTML
-`<button type="button" id="GetIconPicker" data-iconpicker-input="input#IconInput" data-iconpicker-preview="i#IconPreview">Select Icon</button>`
+
+```html
+<button type="button" id="GetIconPicker" data-iconpicker-input="input#IconInput" data-iconpicker-preview="i#IconPreview">Select Icon</button>
+```
 
 #### 4- Init
 
