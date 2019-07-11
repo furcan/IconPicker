@@ -8,7 +8,7 @@ Use the Font Awesome Icons (Font Awesome Free v5.9.0) in your HTML forms. (1534 
 
 
 ### Current Version
-1.3.0 [*](https://github.com/furcan/IconPicker/blob/master/ReleaseNotes.md)
+1.4.0 [*](https://github.com/furcan/IconPicker/blob/master/ReleaseNotes.md)
 
 ### Website and Demo
 https://furcan.github.io/IconPicker/
@@ -33,13 +33,13 @@ yarn add @furcan/iconpicker
 ```html
 <link rel="stylesheet" href="dist/fontawesome590/css/all.min.css" />
 
-<link rel="stylesheet" href="dist/iconpicker-1.3.0.css" />
+<link rel="stylesheet" href="dist/iconpicker-1.4.0.css" />
 ```
 
 #### 2- JavaScript
 
 ```html
-<script src="dist/iconpicker-1.3.0.js"></script>
+<script src="dist/iconpicker-1.4.0.js"></script>
 ```
 
 #### 3- HTML
@@ -53,7 +53,7 @@ yarn add @furcan/iconpicker
 ```js
 // Default options
 IconPicker.Init({
-  // Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.3.0.json'
+  // Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.4.0.json'
   jsonUrl: null,
   // Optional: Change the buttons or search placeholder text according to the language.
   searchPlaceholder: 'Search Icon',
@@ -62,13 +62,29 @@ IconPicker.Init({
 });
 ```
 
-#### 5- Run
+#### 5.1- Run
 
 ```js
 // Select your Button element (ID or Class)
 IconPicker.Run('#GetIconPicker');
 ```
 
+
+
+#### 5.2- Run with a callback function (v1.4.0 and next versions)
+
+```js
+// @param1 => Select your Button element (ID or Class)
+// @param2 => A Callback Function can be used after than an icon selected on the list.
+
+IconPicker.Run('#GetIconPicker', function(){
+    
+    // codes...
+    console.log('Icon Picker');
+    
+});
+
+```
 
 ---------
 ---------

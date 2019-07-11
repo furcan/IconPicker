@@ -1,5 +1,15 @@
-@1.0.0
-* Hello world! I am Icon Picker.
+@1.4.0
+* **Added:** A Callback Function can be used after than an icon selected on the list.
+
+-----
+
+@1.3.0
+* **Changed:** Code Review.
+
+-----
+
+@1.2.0
+* **Added:** Font Awesome Free Icons Library upgraded from "v5.8.2" (1515 icons) to "v5.9.0" (1534 icons).
 
 -----
 
@@ -10,10 +20,7 @@
 
 -----
 
-@1.2.0
-* **Added:** Font Awesome Free Icons Library upgraded from "v5.8.2" (1515 icons) to "v5.9.0" (1534 icons).
+@1.0.0
+* Hello world! I am Icon Picker.
 
 -----
-
-@1.3.0
-* **Changed:** Code Review.

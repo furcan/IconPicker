@@ -28,8 +28,8 @@
     <link id="FontConsolas" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="dist/fontawesome590/css/all.min.css">
-    <link rel="stylesheet" href="dist/iconpicker-1.3.0.css">
-    <link rel="stylesheet" href="index.css?v=1.3.0">
+    <link rel="stylesheet" href="dist/iconpicker-1.4.0.css">
+    <link rel="stylesheet" href="index.css?v=1.4.0">
 
 </head>
 
@@ -50,12 +50,12 @@
                     <code id="DemoCodeCSS">
                         <span class="label">CSS</span>
                         <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/fontawesome590/css/all.min.css</span>"&gt;</span>
-                        <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/iconpicker-1.3.0.css</span>"&gt;</span>
+                        <span class="l1">&lt;link rel="stylesheet" href="<span>/IconPicker/dist/iconpicker-1.4.0.css</span>"&gt;</span>
                     </code>
 
                     <code id="DemoCodeJS">
                         <span class="label">JavaScript</span>
-                        <span class="l1">&lt;script src="<span>/IconPicker/dist/iconpicker-1.3.0.js</span>"&gt;&lt;/script&gt;</span>
+                        <span class="l1">&lt;script src="<span>/IconPicker/dist/iconpicker-1.4.0.js</span>"&gt;&lt;/script&gt;</span>
                     </code>
                 </div>
 
@@ -71,7 +71,7 @@
                         <span class="label">Initialize</span>
                         <span class="l1 cmmnt">// Default options</span>
                         <span class="l1"><span class="fnc1">IconPicker</span>.<span class="fnc2">Init</span>({</span>
-                            <span class="l1 l2 cmmnt">// Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.3.0.json'</span>
+                            <span class="l1 l2 cmmnt">// Required: You have to set the path of IconPicker JSON file to "jsonUrl" option. e.g. '/content/plugins/IconPicker/dist/iconpicker-1.4.0.json'</span>
                             <span class="l1 l2"><span class="fnc1">jsonUrl:</span> <span class="bool">null</span>,</span>
                             <span class="l1 l2 cmmnt">// Optional: Change the buttons or search placeholder text according to the language.</span>
                             <span class="l1 l2"><span class="fnc1">searchPlaceholder:</span> <span class="str">'Search Icon'</span>,</span>
@@ -86,6 +86,22 @@
                         <span class="label">Run</span>
                         <span class="l1 cmmnt">// Select your Button element (ID or Class)</span>
                         <span class="l1"><span class="fnc1">IconPicker</span>.<span class="fnc2">Run</span>(<span class="str the-button">'#GetIconPicker'</span>);</span>                 
+                    </code>
+                </div>
+
+                <div class="info-content step-5">
+                    <code id="DemoCodeRunCallback">
+                        <span class="label">Run - with a callback function (v1.4.0 and next versions)</span>
+                        <span class="l1 cmmnt">// Select your Button element (ID or Class)</span>
+                        <span class="l1"><span class="fnc1">IconPicker</span>.<span class="fnc2">Run</span>(<span class="str the-button">'#GetIconPicker'</span>,</span>          
+                        
+                        <span class="l1 l2"><span class="cllbck">function</span>() {</span>
+
+                        <span class="l1 l2 l3 cmmnt">// a callback function after than an icon selected on the list.</span>
+
+                        <span class="l1 l2">}</span>
+
+                        <span class="l1">);</span>  
                     </code>
                 </div>
 
@@ -154,9 +170,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="dist/iconpicker-1.3.0.js"></script>
+    <script src="dist/iconpicker-1.4.0.js"></script>
     <script src="index-tooltip.js"></script>
-    <script src="index.js?v=1.3.0"></script>
+    <script src="index.js?v=1.4.0"></script>
 
 </body>
 
