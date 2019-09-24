@@ -8,7 +8,7 @@
 
 // DEMO: IconPicker on
 IconPicker.Init({
-    jsonUrl: '../dist/iconpicker-1.5.0.json',
+    jsonUrl: 'dist/iconpicker-1.5.0.json',
 });
 IconPicker.Run('#GetIconPicker', function () {
     console.log('Icon Picker');
