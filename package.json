@@ -1,9 +1,9 @@
 {
     "name": "@furcan/iconpicker",
-    "main": "dist/iconpicker-1.4.0.js",
-    "style": "dist/iconpicker-1.4.0.css",
-    "version": "1.4.0",
-    "description": "Use the Font Awesome Icons (Font Awesome Free v5.9.0) in your HTML forms. (1534 icons)",
+    "main": "dist/iconpicker-1.5.0.js",
+    "style": "dist/iconpicker-1.5.0.css",
+    "version": "1.5.0",
+    "description": "Use the Font Awesome Icons (Font Awesome Free v5.11.2) in your HTML forms. (1544 icons)",
     "homepage": "https://github.com/furcan/IconPicker",
     "files": [
       "dist"

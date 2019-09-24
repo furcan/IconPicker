@@ -1,3 +1,10 @@
+@1.5.0
+* **Added:** Font Awesome Free Icons Library upgraded from "v5.9.0" (1534 icons) to "v5.11.2" (1544 icons).
+* **Added:** "noResultsFound" and "borderRadius" options added.
+* **Changed:** Code Review.
+
+-----
+
 @1.4.0
 * **Added:** A Callback Function can be used after than an icon selected on the list.
 
