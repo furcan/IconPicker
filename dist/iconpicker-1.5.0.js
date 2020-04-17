@@ -87,6 +87,7 @@ var IconPicker = {
           ipButton.addEventListener('click', function() {
             var jsonUrl = ipNewOptions.jsonUrl;
             var inputElement = this.dataset.iconpickerInput;
+            var previewElement = this.dataset.iconpickerPreview;
             var showAllButton = ipNewOptions.showAllButton;
             if (!showAllButton || (showAllButton && showAllButton.length < 1)) {
               showAllButton = ipDefaultOptions.showAllButton;
@@ -119,6 +120,12 @@ var IconPicker = {
             }
             // check the input off
 
+            // check the preview icon on
+            var checkPreviewIcon = document.querySelectorAll(previewElement);
+            if (checkPreviewIcon.length <= 0) {
+              ipConsoleLog('You can define your Preview Icon element with it\'s ID or Class Name to your Button element data attribute. \n\nExample: \ndata-iconpicker-preview="i#MyIconElement" or \ndata-iconpicker-preview="i.my-icon-element" \n\nVisit to learn how: ' + ipGithubUrl);
+            }
+            // check the preview icon off
 
             // check the callback on
             if (!theCallback && typeof theCallback !== 'function') {
@@ -126,7 +133,7 @@ var IconPicker = {
             }
             // check the callback off
 
-            getIconListXmlHttpRequest(jsonUrl, showAllButton, cancelButton, searchPlaceholder, borderRadius, inputElement, theCallback);
+            getIconListXmlHttpRequest(jsonUrl, showAllButton, cancelButton, searchPlaceholder, borderRadius, inputElement, previewElement, theCallback);
 
           });
           // IconPicker: Button Listeners -> Send XMLHttpRequest off
@@ -149,7 +156,7 @@ var IconPicker = {
 
 
     // IconPicker: Get Library from JSON and AppendTo Body on
-    var getIconListXmlHttpRequest = function(jsonUrl, buttonShowAll, buttonCancel, searchPlaceholder, borderRadius, inputElement, theCallback) {
+    var getIconListXmlHttpRequest = function(jsonUrl, buttonShowAll, buttonCancel, searchPlaceholder, borderRadius, inputElement, previewElement, theCallback) {
 
       // if chrome browser
       if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
@@ -173,7 +180,7 @@ var IconPicker = {
           if (this.readyState === 4) {
             if (this.status === 200) { // success
               var data = this.responseText;
-              appendIconListToBody(data, buttonShowAll, buttonCancel, searchPlaceholder, borderRadius, inputElement, theCallback);
+              appendIconListToBody(data, buttonShowAll, buttonCancel, searchPlaceholder, borderRadius, inputElement, previewElement, theCallback);
             } else {
               ipConsoleError('XMLHttpRequest Failed.');
             }
@@ -185,7 +192,7 @@ var IconPicker = {
 
 
     // IconPicker: Append Library to Body on
-    var appendIconListToBody = function(data, buttonShowAll, buttonCancel, searchPlaceholder, borderRadius, inputElement, theCallback) {
+    var appendIconListToBody = function(data, buttonShowAll, buttonCancel, searchPlaceholder, borderRadius, inputElement, previewElement, theCallback) {
 
       // data
       var jsonData = JSON.parse(data);
@@ -368,6 +375,7 @@ var IconPicker = {
       function eachIconEventListener(firstOrSearch) {
 
         var inputElm = document.querySelectorAll(inputElement);
+        var previewElm = document.querySelectorAll(previewElement);
 
         // define icons on
         var eachIconElm;
@@ -387,19 +395,19 @@ var IconPicker = {
         };
 
         var callback = function(mutationsList, observer) {
-          attachClickEventForEachIcon(eachIconElm, inputElm);
+          attachClickEventForEachIcon(eachIconElm, inputElm, previewElm);
         };
 
         var observer = new MutationObserver(callback);
         observer.observe(wrapElem, config);
 
-        attachClickEventForEachIcon(eachIconElm, inputElm);
+        attachClickEventForEachIcon(eachIconElm, inputElm, previewElm);
 
         // add listeners each off
 
       }
 
-      function attachClickEventForEachIcon(eachIconElm, inputElm) {
+      function attachClickEventForEachIcon(eachIconElm, inputElm, previewElm) {
 
         for (var i = 0; i < eachIconElm.length; i++) {
           var singleIconElm = eachIconElm[i];
@@ -413,7 +421,10 @@ var IconPicker = {
               } else {
                 inputElm[i].innerHTML = iconClassName;
               }
-              $("#macroIconPreview").html("<i class='" + iconClassName + " fa-2x m-2'></i>");
+
+            }
+            for (var i = 0; i < previewElm.length; i++) {
+              previewElm[i].setAttribute('class', iconClassName);
             }
             removeIpElement(400);
           }, false);
